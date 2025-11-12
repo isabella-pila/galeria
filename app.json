@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "projetocoringaexpocamera",
+    "slug": "projetocoringaexpocamera",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": false,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ffffff",
+      "plugins": [
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "O app precisa de acesso à galeria para cadastrar fotos de produtos.",
+          "cameraPermission": "O app precisa de acesso à câmera para tirar fotos de produtos."
+        }
+      ]
+    ]
+    },
+    "ios": {
+      "supportsTablet": true
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ffffff"
+      },
+      "edgeToEdgeEnabled": true,
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}
