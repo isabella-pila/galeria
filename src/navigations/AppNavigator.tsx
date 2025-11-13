@@ -6,6 +6,8 @@ import { Ionicons } from '@expo/vector-icons';
 // Importe suas duas telas
 import CameraScreen from '../screens/CameraScreen';
 import MyPhotosScreen from '../screens/MyPhotosScreen';
+import ImagePickerScreen from '../screens/Camera-imgPicker';
+import CameraScreen_midia from '../screens/Camera-midia-library'
 
 const Tab = createBottomTabNavigator();
 
@@ -33,7 +35,19 @@ export default function AppNavigator() {
           name="Minhas Fotos" 
           component={MyPhotosScreen} 
         />
+         <Tab.Screen 
+          name="ImagePicker" 
+          component={ImagePickerScreen} 
+          options={{ headerShown: false }} // Esconde o header da câmera
+        />
+              <Tab.Screen 
+          name="midia-libary" 
+          component={CameraScreen_midia} 
+          options={{ headerShown: false }} // Esconde o header da câmera
+        />
       </Tab.Navigator>
+         
+  
     </NavigationContainer>
   );
 }
